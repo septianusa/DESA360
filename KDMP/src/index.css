@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #18301c;
+  background: #fbfaf4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    linear-gradient(180deg, rgba(242, 248, 241, 0.78), rgba(251, 250, 244, 1) 420px),
+    #fbfaf4;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(207, 47, 47, 0.3);
+  outline-offset: 2px;
+}
+
+.scrollbar-soft {
+  scrollbar-width: thin;
+  scrollbar-color: #8bc783 #f2f8f1;
+}
+
+.scrollbar-soft::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.scrollbar-soft::-webkit-scrollbar-track {
+  background: #f2f8f1;
+}
+
+.scrollbar-soft::-webkit-scrollbar-thumb {
+  background: #8bc783;
+  border-radius: 999px;
+}
+
+.map-grid {
+  background-image:
+    linear-gradient(rgba(47, 107, 48, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 107, 48, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
